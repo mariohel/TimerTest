@@ -1,0 +1,17 @@
+.container-fluid{
+    margin: 0px 37%;
+    font-family: Digital;
+    li{
+        list-style: none;
+        cursor: pointer;
+        min-width: 300px;
+    }
+    .btn-danger{
+        margin-left: 100px;
+        padding: 2px 5px;
+        font-size: 10px;
+        background-color: red;
+        border-radius: 1px;
+        cursor: pointer;
+    }
+}

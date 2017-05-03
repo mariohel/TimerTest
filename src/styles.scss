@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: 'Digital';
+  src: url('assets/fonts/DS-DIGI.ttf');
+}
+
+body {
+    background-color: #343334;
+    color: #fff;
+}
+

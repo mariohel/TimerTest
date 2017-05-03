@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <ul>
+    <li *ngFor="let item of timeList" (mouseout)="mouseOvered[item]=false" (mouseover)="mouseOvered[item]=true">
+      <a>{{item | amDateFormat:format}}</a>
+      <button class="btn btn-danger" [style.visibility]="mouseOvered[item]?'visible':'hidden'" (click)="deleteTimer(item)">Remove</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+<div class="card text-center">
+  <div class="card-block">
+    <h3 class="card-title">{{service.time | amDateFormat:format}}</h3>    
+  </div>
+  <div class="card-footer">
+    <div class="btn-group row col-sm-12">  
+      <button *ngIf="service.subscription" type="button" (click)="pause()" class="col-sm-6 btn btn-secondary" aria-label="Center Align">
+        <i class="material-icons">pause</i> Pause
+      </button>
+      <button *ngIf="!service.subscription" type="button" (click)="play()" class="col-sm-6 btn btn-secondary" aria-label="Right Align">
+        <i class="material-icons">play_arrow</i> Play
+      </button>
+      <button type="button" class="col-sm-3 btn btn-secondary" (click)="saveTimer()" aria-label="Justify">
+        <i class="material-icons">timer</i>
+      </button>
+      <button type="button" class="col-sm-3 btn btn-secondary" (click)="stop()" aria-label="Left Align">
+        <i class="material-icons">delete</i>
+      </button>
+    </div>
+  </div>
+</div>
+<app-timer-list [timeList]="service.timeList" [format]="'mm:ss.SS'" (itemDeleted)="deleteTimer($event)"></app-timer-list>

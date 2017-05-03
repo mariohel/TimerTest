@@ -1,0 +1,43 @@
+.card {
+    margin: 50px 40%;
+    min-width: 250px;
+    border: none;
+    .card-block {
+        height: 80px;
+        background-color: #252425;
+        border: 3px solid black;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin: -1px;
+        .card-title {
+            color: #83ba51;
+            font-family: Digital;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+
+    .card-footer {
+        padding: 0px;
+        background-color: #fff;
+        border: none;
+        margin: 0px;
+        .btn-group {
+            margin: 0px;
+            padding: 0px;  
+            button {
+                margin: 0px;
+                padding: 5px 0px;
+                outline: none;
+                background-color: #fff;                
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                cursor: pointer;
+                i {
+                    vertical-align: middle;
+                    padding-bottom: 4px;
+                }          
+            }
+        }
+    }
+}
