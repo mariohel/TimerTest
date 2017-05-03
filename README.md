@@ -1,10 +1,12 @@
 # TimerTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
+This project was generated with Angular 4.0.0 , [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
 
 # Installing Test
 Run `npm install`
+
 Run `ng serve` 
+
 Navigate to `http://localhost:4200/`.
 
 ## Development server
