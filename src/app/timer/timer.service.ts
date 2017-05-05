@@ -42,8 +42,6 @@ export class TimerService {
 
     if (this.storage && !this.storage.paused) {
       this.play();
-    } else {
-      this.setCache();
     }
   }
 
@@ -70,7 +68,8 @@ export class TimerService {
   }
 
   tick(time) {
-    this.time = this.startTime + time;
+    const diff = (this.storage.date && !this.storage.paused) ? (new Date().getTime() - this.storage.date) : 0;
+    this.time = this.startTime + (diff/10);
   }
 
   play() {
